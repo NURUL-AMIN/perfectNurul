@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NU_AMIN</h1>
+            <p>Full Stack Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">NU_AMIN</span></h1>
+                <h2>I build things for the web</h2>
+                <p>Full Stack Developer specializing in modern web technologies</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm NU_AMIN, a passionate full-stack developer with a keen eye for creating intuitive, responsive, and efficient web applications. With a strong foundation in computer science and several years of industry experience, I specialize in building scalable solutions that solve real-world problems.</p>
+                    <p>My expertise spans across frontend frameworks like React, backend technologies including Node.js and Python, and cloud infrastructure with AWS. I'm particularly interested in AI integration, performance optimization, and creating accessible user experiences. When not coding, I contribute to open-source projects, mentor junior developers, and explore emerging technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML/CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL/NoSQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git/GitHub</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-universal-access"></i>
+                    <h3>Accessibility</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>CI/CD</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>AI-Powered Task Manager</h3>
+                        <p>A smart task management system that uses machine learning to prioritize tasks, suggest optimal scheduling, and provide productivity insights.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>TensorFlow.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>E-Commerce Analytics Platform</h3>
+                        <p>A comprehensive analytics dashboard for online retailers that visualizes sales trends, customer behavior patterns, and inventory optimization recommendations.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>PostgreSQL</span>
+                            <span>D3.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>Real-time Collaboration Tool</h3>
+                        <p>A WebSocket-powered platform enabling teams to collaborate on documents, code, and design files in real-time with version control and commenting features.</p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>Express</span>
+                            <span>Socket.io</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>Smart Home IoT Dashboard</h3>
+                        <p>A centralized control system for smart home devices with automation rules, energy usage tracking, and mobile-responsive interface.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>GraphQL</span>
+                            <span>MQTT</span>
+                            <span>AWS IoT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you!</p>
+            <div class="contact-links">
+                <a href="mailto:nu.amin@example.com" class="btn primary">Email Me</a>
+                <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 NU_AMIN. All rights reserved.</p>
+            <p>Built with <span class="heart">❤</span> using Flask</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
